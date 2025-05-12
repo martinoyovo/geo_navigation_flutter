@@ -7,7 +7,7 @@ void main() {
   ArcGISEnvironment.setLicenseUsingKey(
     const String.fromEnvironment('STANDARD_LICENSE'),
   );
-  runApp(const MyApp());martinoyovo/geo_navigation_flutter
+  runApp(const MyApp());
 
 
 }
