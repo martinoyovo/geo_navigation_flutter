@@ -4,6 +4,8 @@
 A Flutter application that showcases wonders around the world using  for seamless map integration.
 This project is a Flutter-based navigation app that demonstrates geospatial awareness using Geotriggers, real-time route tracking, and voice alerts. Built with the [ArcGIS Maps SDK for Flutter](https://pub.dev/packages/arcgis_maps), it simulates a smart navigation experience designed for spatially aware applications.
 
+You can learn more about how this app was built by reading my post on ArcGIS Blog: [Build smarter location-aware apps with Geotriggers in ArcGIS Maps SDK for Flutter](https://www.esri.com/arcgis-blog/).
+
 ## 📱 Features Overview
 1. Load a map and preview route
 2. Use Geotriggers to detect entry and exit of warning zones
