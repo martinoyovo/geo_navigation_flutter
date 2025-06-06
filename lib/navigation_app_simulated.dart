@@ -65,6 +65,7 @@ class _NavigationAppSimulatedState extends State<NavigationAppSimulated> {
   @override
   void initState() {
     _ttsEngine = FlutterTts()..setSpeechRate(0.5);
+    initAudioCategory();
     super.initState();
   }
 
@@ -118,6 +119,14 @@ class _NavigationAppSimulatedState extends State<NavigationAppSimulated> {
         ],
       ),
     );
+  }
+
+  Future<void> initAudioCategory() async {
+    await _ttsEngine.setIosAudioCategory(IosTextToSpeechAudioCategory.ambient, [
+      IosTextToSpeechAudioCategoryOptions.allowBluetooth,
+      IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
+      IosTextToSpeechAudioCategoryOptions.mixWithOthers,
+    ], IosTextToSpeechAudioMode.voicePrompt);
   }
 
   void onMapViewReady() async {
